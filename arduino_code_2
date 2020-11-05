@@ -1,0 +1,19 @@
+int red=11;
+int blue=10;
+int green=9;
+
+void setup()
+{
+  pinMode(red, OUTPUT);
+  pinMode(blue, OUTPUT);
+  pinMode(green, OUTPUT);
+}
+
+void loop()
+{
+  int x = random(5,255);
+  analogWrite(red,x);
+  analogWrite(blue,x);
+  analogWrite(green,x);
+
+}
