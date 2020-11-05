@@ -1,0 +1,19 @@
+int b1 = 5;
+int b2 = 4;
+int b3 = 3;
+int sp = 11;
+
+void setup(){
+  pinMode(sp,OUTPUT);
+  pinMode(b1,INPUT_PULLUP);
+  pinMode(b2,INPUT_PULLUP);
+  pinMode(b3,INPUT_PULLUP);
+}
+void loop(){
+  int x1 = digitalRead(b1);
+  int x2 = digitalRead(b2);
+  int x3 = digitalRead(b3);
+  if(x1==0){tone(sp,250);}
+  if(x2==0){tone(sp,350);}
+  if(x3==0){tone(sp,450);}
+}
